@@ -1,6 +1,7 @@
 // === controls.js ===
 import { OrbitControls } from "https://esm.sh/three/examples/jsm/controls/OrbitControls.js";
 import * as THREE from "https://esm.sh/three";
+import { gsap } from "https://esm.sh/gsap";
 
 /**
  * Set up OrbitControls with default parameters
@@ -24,8 +25,22 @@ export function setupControls(camera, canvas) {
  * @param {OrbitControls} controls
  */
 export function moveToPlanet(targetPosition, camera, controls) {
-  controls.target.copy(targetPosition);
   const offset = new THREE.Vector3(0, 0, 10);
-  camera.position.copy(targetPosition.clone().add(offset));
-  controls.update();
+  const newPos = targetPosition.clone().add(offset);
+
+  gsap.to(camera.position, {
+    duration: 2,
+    x: newPos.x,
+    y: newPos.y,
+    z: newPos.z,
+    onUpdate: () => controls.update(),
+  });
+
+  gsap.to(controls.target, {
+    duration: 2,
+    x: targetPosition.x,
+    y: targetPosition.y,
+    z: targetPosition.z,
+    onUpdate: () => controls.update(),
+  });
 }

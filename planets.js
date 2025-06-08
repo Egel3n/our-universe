@@ -38,7 +38,7 @@ const planetData = [
     sprite: "assets/budweiser.png",
   },
   {
-    name: "Sun",
+    name: "Ege",
     color: 0xffcc00,
     position: [80, 45, -40],
     size: 4,
@@ -46,7 +46,7 @@ const planetData = [
     sprite: null, // güneşe etiket gerekmez
   },
   {
-    name: "Moon",
+    name: "Serra",
     color: 0xcccccc, // soft gray
     position: [95, 45, -40],
     size: 1.5,

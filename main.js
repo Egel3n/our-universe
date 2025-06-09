@@ -26,7 +26,7 @@ const planetPositions = getPlanetPositions();
 const planetNameDiv = document.getElementById("planetName");
 
 const controls = setupControls(camera, renderer.domElement);
-let currentIndex = 1;
+let currentIndex = 0;
 moveToPlanet(planetPositions[currentIndex], camera, controls);
 
 setupStars(scene);

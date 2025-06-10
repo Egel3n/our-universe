@@ -3,35 +3,35 @@ import * as THREE from "https://esm.sh/three";
 
 const planetData = [
   {
-    name: "Wizard Planet",
+    name: "Sihirbazlık Gezegeni",
     color: 0xff6699,
     position: [-20, 5, -10],
     size: 2,
     sprite: "assets/sihirbazlik.png",
   },
   {
-    name: "Sarlo Planet",
+    name: "Şarlo Planet",
     color: 0x996633,
     position: [0, 0, 0],
     size: 2.5,
     sprite: "assets/beer.png",
   },
   {
-    name: "Echoes Planet",
+    name: "Echoes Gezegeni",
     color: 0xffcc80,
     position: [20, -3, 15],
     size: 2,
     sprite: "assets/blanc.png",
   },
   {
-    name: "Lamb Ear Planet",
+    name: "Kuzu Kulağı Gezegeni",
     color: 0x2e6e40,
     position: [40, 15, 15],
     size: 2,
     sprite: "assets/kuzukulagi.png",
   },
   {
-    name: "Budweiser Planet",
+    name: "Budweiser Gezegeni",
     color: 0xc8102e,
     position: [60, -12, 15],
     size: 2,

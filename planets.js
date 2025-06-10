@@ -10,7 +10,7 @@ const planetData = [
     sprite: "assets/sihirbazlik.png",
   },
   {
-    name: "Şarlo Planet",
+    name: "Şarlo Gezegeni",
     color: 0x996633,
     position: [0, 0, 0],
     size: 2.5,
